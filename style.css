@@ -76,7 +76,6 @@ h6 {
 /* Lists (enumeration) */
 /* ============================================ */
 
-
 ul,
 ol {
   margin: 0;
@@ -437,7 +436,7 @@ th {
 /* 画像投稿アプリ用buttonタグCSS */
 button {
   color: #fff;
-  background-color: #44AFFD;
+  background-color: #44affd;
   width: 90px;
   height: 35px;
   text-align: center;
@@ -473,9 +472,10 @@ button {
 
 .pagination li {
   display: inline;
-  padding:10px 15px;
+  padding: 10px 15px;
   margin: 3px;
-  border:1px #ccc solid;color:#000053;
+  border: 1px #ccc solid;
+  color: #000053;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -507,11 +507,11 @@ button {
 }
 
 .updateButton {
-  background-color: #78E40C;
+  background-color: #78e40c;
 }
 
 .deleteButton {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 /* 画像詳細ページ.コメント */
