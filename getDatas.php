@@ -8,9 +8,10 @@ if(strpos($uri, 'imageDetail.php')!==false){
     $sth->execute();
     $data['image']=$sth->fetch();
 
-    // $sql2="SELECT*FROM comments WHERE image_id = ". $imageId . "ORDER BY create_date DESC";
+    // 降順でデータをとってくる。新しい画像を上に
     $sql2 = "SELECT * FROM comments WHERE image_id = " . $imageId . " ORDER BY create_date DESC";
 
+    // 準び、実行、全部とってくる
     $sth = $db->prepare($sql2);
     $sth->execute();
     $data['comments']=$sth->fetchAll();

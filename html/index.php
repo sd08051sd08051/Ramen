@@ -8,6 +8,7 @@
   <title>ラーメン特化SNS</title>
 </head>
 <body>
+  <!-- 各Phpファイルを読み出してくる -->
   <?php include('../dbConfig.php') ?>
   <?php include('../getDatas.php') ?>
   <?php include('./header.php') ?>

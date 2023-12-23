@@ -11,6 +11,7 @@
   <?php include('./header.php') ?>
   <div class="submitImage">
      <?php if(isset($_GET['id'])) { ?>
+      <!-- 送信ボタンを押したタイミングでアップロードをするアクション -->
       <form action="../updateImage.php?id=<?php echo($_GET['id']); ?>" method="post" enctype="multipart/form-data">
     <?php } else { ?>
       <form action="../postImage.php" method="post" enctype="multipart/form-data">
