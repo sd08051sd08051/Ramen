@@ -13,7 +13,9 @@
   <?php include('../getDatas.php') ?>
   <?php include('./header.php') ?>
   <div class="imageList">
+    <!-- 取ってきた画像を表示させていく -->
     <?php foreach ($data as $image) { ?>
+      <!-- ？idで画像のidを入れたページに飛ぶ -->
       <a href="./imageDetail.php?id=<?php echo $image['id']; ?>"><img src="../images/<?php echo $image['file_name']; ?>" alt="投稿画像"></a>
     <?php }; ?>
 </div>

@@ -1,11 +1,14 @@
 <?php 
 $uri = $_SERVER['REQUEST_URI'];
 
+// 画面詳細のURLにいたときの処理とそうでない時の処理
 if(strpos($uri, 'imageDetail.php')!==false){
     $imageId = $_GET['id'];
+
     $sql="SELECT*FROM images WHERE id =" .$imageId;
     $sth = $db->prepare($sql);
     $sth->execute();
+    // 選択した画像を一個だけ取得する
     $data['image']=$sth->fetch();
 
     // 降順でデータをとってくる。新しい画像を上に
